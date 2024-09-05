@@ -1,1 +1,1 @@
-https://github.com/koala2k4/EBDB4.Group4.git
+https://github.com/koala2k4/EBDB4.Group4
