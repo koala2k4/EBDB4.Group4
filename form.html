@@ -6,10 +6,13 @@
         form {
             text-align: center; /* Center the text inside the form */
             background-color: rgb(255, 240, 245); /* Even Lighter Pink for Form */
-            padding: 0px;
+            padding: 20px; /* Add padding around the form */
             border-radius: 8px;
             margin: 0 auto; /* Center the form itself */
             width: 100%;
+        }
+        .form-group {
+            margin-bottom: 20px; /* Add margin between each form element */
         }
         .checkbox-container {
             display: flex;
@@ -44,51 +47,62 @@
         <td width="50">&nbsp;</td>
         <td class="content-padding">
             <form>
-                <label for="firstname">First Name:</label><br>
-                <input type="text" id="firstname" name="firstname"><br><br>
+                <div class="form-group">
+                    <label for="firstname">First Name:</label><br>
+                    <input type="text" id="firstname" name="firstname"><br>
+                </div>
                 
-                <label for="lastname">Last Name:</label><br>
-                <input type="text" id="lastname" name="lastname"><br><br>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label><br>
+                    <input type="text" id="lastname" name="lastname"><br>
+                </div>
                 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
                 
-                <label for="genre">Favorite Music Genre:</label><br>
-                <select id="genre" name="genre">
-                    <option value="rock">Rock</option>
-                    <option value="jazz">Jazz</option>
-                    <option value="hiphop">Hip-hop</option>
-                    <option value="folk">Folk</option>
-                    <option value="classical">Classical</option>
-                </select><br><br>
+                <div class="form-group">
+                    <label for="genre">Favorite Music Genre:</label><br>
+                    <select id="genre" name="genre">
+                        <option value="rock">Rock</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="hiphop">Hip-hop</option>
+                        <option value="folk">Folk</option>
+                        <option value="classical">Classical</option>
+                    </select><br>
+                </div>
+
+                <div class="form-group">
+                    <label>Ways to Access Music:</label><br>
+                    <table align="center">
+                        <tr>
+                            <td><input type="checkbox" id="stream" name="access" value="stream"></td>
+                            <td><label for="stream">Streaming</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="radio" name="access" value="radio"></td>
+                            <td><label for="radio">Radio</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="cd" name="access" value="cd"></td>
+                            <td><label for="cd">CDs</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="tv" name="access" value="tv"></td>
+                            <td><label for="tv">TV</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="vinyl" name="access" value="vinyl"></td>
+                            <td><label for="vinyl">Vinyl Records</label></td>
+                        </tr>
+                    </table>
+                </div>
                 
-                <label>Ways to Access Music:</label><br>
-                <table align="center">
-                    <tr>
-                        <td><input type="checkbox" id="stream" name="access" value="stream"></td>
-                        <td><label for="stream">Streaming</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="radio" name="access" value="radio"></td>
-                        <td><label for="radio">Radio</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="cd" name="access" value="cd"></td>
-                        <td><label for="cd">CDs</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="tv" name="access" value="tv"></td>
-                        <td><label for="tv">TV</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="vinyl" name="access" value="vinyl"></td>
-                        <td><label for="vinyl">Vinyl Records</label></td>
-                    </tr>
-                </table>
-                <br>
-                
-                <label for="comment">Comments:</label><br>
-                <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br><br>
+                <div class="form-group">
+                    <label for="comment">Comments:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br>
+                </div>
                 
                 <img src="group-icon.jpg" alt="Group Icon" width="100" height="100"><br><br>
                 
