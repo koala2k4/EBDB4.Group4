@@ -2,28 +2,6 @@
 <html>
 <head>
     <title>Music Form</title>
-    <style>
-        form {
-            text-align: center; /* Center the text inside the form */
-            background-color: rgb(255, 240, 245); /* Even Lighter Pink for Form */
-            padding: 20px;
-            border-radius: 8px;
-            margin: 0 auto; /* Center the form itself */
-            width: 100%;
-        }
-        .checkbox-container {
-            display: flex;
-            justify-content: center; /* Align checkboxes in the center */
-            margin-bottom: 5px;
-        }
-        .checkbox-container input {
-            margin-right: 10px;
-        }
-        .checkbox-group {
-            display: inline-block; /* Ensure the checkboxes are inline */
-            text-align: left; /* Left align the checkbox text */
-        }
-    </style>
 </head>
 <body style="background-color: rgb(255, 182, 193); font-family: Helvetica, sans-serif; color: green;">
 
@@ -36,11 +14,11 @@
         <td>&nbsp;</td>
         <td width="50">&nbsp;</td>
     </tr>
-    <!-- Second row, center the form and checkboxes -->
+    <!-- Second row, center the form -->
     <tr>
         <td width="50">&nbsp;</td>
         <td>
-            <form>
+            <form style="background-color: rgb(255, 240, 245); padding: 20px; border-radius: 8px;">
                 <label for="firstname">First Name:</label><br>
                 <input type="text" id="firstname" name="firstname"><br><br>
                 
@@ -60,28 +38,29 @@
                 </select><br><br>
                 
                 <label>Ways to Access Music:</label><br>
-                <div class="checkbox-group">
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="stream" name="access" value="stream">
-                        <label for="stream">Streaming</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="radio" name="access" value="radio">
-                        <label for="radio">Radio</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="cd" name="access" value="cd">
-                        <label for="cd">CDs</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="tv" name="access" value="tv">
-                        <label for="tv">TV</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="vinyl" name="access" value="vinyl">
-                        <label for="vinyl">Vinyl Records</label>
-                    </div>
-                </div>
+                <!-- Use a table for checkboxes to ensure proper alignment -->
+                <table align="center">
+                    <tr>
+                        <td><input type="checkbox" id="stream" name="access" value="stream"></td>
+                        <td><label for="stream">Streaming</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="radio" name="access" value="radio"></td>
+                        <td><label for="radio">Radio</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="cd" name="access" value="cd"></td>
+                        <td><label for="cd">CDs</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="tv" name="access" value="tv"></td>
+                        <td><label for="tv">TV</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="vinyl" name="access" value="vinyl"></td>
+                        <td><label for="vinyl">Vinyl Records</label></td>
+                    </tr>
+                </table>
                 <br>
                 
                 <label for="comment">Comments:</label><br>
