@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Music Form</title>
@@ -9,7 +10,6 @@
         }
         table {
             width: 60%;
-            height: 400px;
             margin: auto;
             background-color: rgb(255, 228, 225); /* Lighter Pink for Table */
             border-collapse: collapse;
@@ -17,6 +17,8 @@
         td {
             vertical-align: middle;
             text-align: center;
+            min-width: 120px; /* Slightly increase the width of cells */
+            min-height: 50px; /* Slightly increase the height of cells */
         }
         form {
             background-color: rgb(255, 240, 245); /* Even Lighter Pink for Form */
@@ -31,20 +33,33 @@
         .checkbox-container input {
             margin-right: 10px;
         }
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 0px; /* Adjust to align with the label */
+        }
+        label, select, input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            box-sizing: border-box; /* Ensures consistent padding */
+        }
+        h1 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-<h1 align="center">Favorite Music Form</h1>
+<h1>Favorite Music Form</h1>
 
 <table border="0">
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>A1</td>
+        <td>A2</td>
+        <td>A3</td>
     </tr>
     <tr>
-        <td></td>
+        <td>B1</td>
         <td>
             <form>
                 <label for="firstname">First Name:</label><br>
@@ -66,25 +81,27 @@
                 </select><br><br>
                 
                 <label>Ways to Access Music:</label><br>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="stream" name="access" value="stream">
-                    <label for="stream">Streaming</label>
-                </div>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="radio" name="access" value="radio">
-                    <label for="radio">Radio</label>
-                </div>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="cd" name="access" value="cd">
-                    <label for="cd">CDs</label>
-                </div>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="tv" name="access" value="tv">
-                    <label for="tv">TV</label>
-                </div>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="vinyl" name="access" value="vinyl">
-                    <label for="vinyl">Vinyl Records</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="stream" name="access" value="stream">
+                        <label for="stream">Streaming</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="radio" name="access" value="radio">
+                        <label for="radio">Radio</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="cd" name="access" value="cd">
+                        <label for="cd">CDs</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="tv" name="access" value="tv">
+                        <label for="tv">TV</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="vinyl" name="access" value="vinyl">
+                        <label for="vinyl">Vinyl Records</label>
+                    </div>
                 </div>
                 <br>
                 
@@ -96,12 +113,12 @@
                 <input type="submit" value="Submit">
             </form>
         </td>
-        <td></td>
+        <td>B3</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>C1</td>
+        <td>C2</td>
+        <td>C3</td>
     </tr>
 </table>
 
