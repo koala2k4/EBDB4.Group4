@@ -2,65 +2,23 @@
 <html>
 <head>
     <title>Music Form</title>
-    <style>
-        body {
-            background-color: rgb(255, 182, 193); /* Light Pink Background */
-            font-family: Helvetica, sans-serif;
-            color: green; /* Green Text */
-        }
-        table {
-            width: 60%;
-            margin: auto;
-            background-color: rgb(255, 228, 225); /* Lighter Pink for Table */
-            border-collapse: collapse;
-        }
-        td {
-            vertical-align: middle;
-            text-align: center;
-        }
-        form {
-            background-color: rgb(255, 240, 245); /* Even Lighter Pink for Form */
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .checkbox-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start; /* Align checkboxes with their labels */
-            margin-bottom: 5px;
-        }
-        .checkbox-container input {
-            margin-right: 10px;
-        }
-        .checkbox-group {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-left: 0px; /* Adjust to align with the label */
-        }
-        label, select, input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            box-sizing: border-box; /* Ensures consistent padding */
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
 </head>
-<body>
+<body style="background-color: rgb(255, 182, 193); font-family: Helvetica, sans-serif; color: green;">
 
-<h1>Favorite Music Form</h1>
+<h1 align="center">Favorite Music Form</h1>
 
-<table border="0">
-    <tr>
+<table border="0" width="60%" align="center" bgcolor="rgb(255, 228, 225)" cellpadding="10" cellspacing="0">
+    <!-- First row, set height and width for the first and third columns -->
+    <tr height="100">
+        <td width="150"></td>
         <td></td>
-        <td></td>
-        <td></td>
+        <td width="150"></td>
     </tr>
+    <!-- Second row, set width for the first and third columns -->
     <tr>
-        <td></td>
+        <td width="150"></td>
         <td>
-            <form>
+            <form style="background-color: rgb(255, 240, 245); padding: 20px; border-radius: 8px;">
                 <label for="firstname">First Name:</label><br>
                 <input type="text" id="firstname" name="firstname"><br><br>
                 
@@ -80,24 +38,24 @@
                 </select><br><br>
                 
                 <label>Ways to Access Music:</label><br>
-                <div class="checkbox-group">
-                    <div class="checkbox-container">
+                <div>
+                    <div>
                         <input type="checkbox" id="stream" name="access" value="stream">
                         <label for="stream">Streaming</label>
                     </div>
-                    <div class="checkbox-container">
+                    <div>
                         <input type="checkbox" id="radio" name="access" value="radio">
                         <label for="radio">Radio</label>
                     </div>
-                    <div class="checkbox-container">
+                    <div>
                         <input type="checkbox" id="cd" name="access" value="cd">
                         <label for="cd">CDs</label>
                     </div>
-                    <div class="checkbox-container">
+                    <div>
                         <input type="checkbox" id="tv" name="access" value="tv">
                         <label for="tv">TV</label>
                     </div>
-                    <div class="checkbox-container">
+                    <div>
                         <input type="checkbox" id="vinyl" name="access" value="vinyl">
                         <label for="vinyl">Vinyl Records</label>
                     </div>
@@ -112,12 +70,13 @@
                 <input type="submit" value="Submit">
             </form>
         </td>
-        <td></td>
+        <td width="150"></td>
     </tr>
-    <tr>
+    <!-- Third row, set height and width for the first and third columns -->
+    <tr height="100">
+        <td width="150"></td>
         <td></td>
-        <td></td>
-        <td></td>
+        <td width="150"></td>
     </tr>
 </table>
 
