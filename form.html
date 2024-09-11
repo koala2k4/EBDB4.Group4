@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +22,10 @@
             display: inline-block; /* Ensure the checkboxes are inline */
             text-align: left; /* Left align the checkbox text */
         }
+        /* Specific padding for the content in row 2, column 2 */
+        td.content-padding {
+            padding: 20px; /* Add padding to the specific cell */
+        }
     </style>
 </head>
 <body style="background-color: rgb(255, 182, 193); font-family: Helvetica, sans-serif; color: green;">
@@ -36,10 +39,10 @@
         <td>&nbsp;</td>
         <td width="50">&nbsp;</td>
     </tr>
-    <!-- Second row, center the form and checkboxes -->
+    <!-- Second row, center the form and checkboxes with specific padding -->
     <tr>
         <td width="50">&nbsp;</td>
-        <td>
+        <td class="content-padding">
             <form>
                 <label for="firstname">First Name:</label><br>
                 <input type="text" id="firstname" name="firstname"><br><br>
@@ -59,7 +62,7 @@
                     <option value="classical">Classical</option>
                 </select><br><br>
                 
-               <label>Ways to Access Music:</label><br>
+                <label>Ways to Access Music:</label><br>
                 <table align="center">
                     <tr>
                         <td><input type="checkbox" id="stream" name="access" value="stream"></td>
