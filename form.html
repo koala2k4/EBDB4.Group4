@@ -19,26 +19,46 @@
         <td width="50">&nbsp;</td>
         <td>
             <form style="background-color: rgb(255, 240, 245); padding: 20px; border-radius: 8px;">
-                <label for="firstname">First Name:</label><br>
-                <input type="text" id="firstname" name="firstname"><br><br>
+                <table align="center">
+                    <!-- Center First Name -->
+                    <tr>
+                        <td><label for="firstname">First Name:</label></td>
+                        <td><input type="text" id="firstname" name="firstname"></td>
+                    </tr>
+                    <tr><td colspan="2"><br></td></tr> <!-- Spacer row -->
+
+                    <!-- Center Last Name -->
+                    <tr>
+                        <td><label for="lastname">Last Name:</label></td>
+                        <td><input type="text" id="lastname" name="lastname"></td>
+                    </tr>
+                    <tr><td colspan="2"><br></td></tr> <!-- Spacer row -->
+
+                    <!-- Center Email -->
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr><td colspan="2"><br></td></tr> <!-- Spacer row -->
+
+                    <!-- Center Favorite Music Genre -->
+                    <tr>
+                        <td><label for="genre">Favorite Music Genre:</label></td>
+                        <td>
+                            <select id="genre" name="genre">
+                                <option value="rock">Rock</option>
+                                <option value="jazz">Jazz</option>
+                                <option value="hiphop">Hip-hop</option>
+                                <option value="folk">Folk</option>
+                                <option value="classical">Classical</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
                 
-                <label for="lastname">Last Name:</label><br>
-                <input type="text" id="lastname" name="lastname"><br><br>
-                
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                
-                <label for="genre">Favorite Music Genre:</label><br>
-                <select id="genre" name="genre">
-                    <option value="rock">Rock</option>
-                    <option value="jazz">Jazz</option>
-                    <option value="hiphop">Hip-hop</option>
-                    <option value="folk">Folk</option>
-                    <option value="classical">Classical</option>
-                </select><br><br>
-                
+                <br>
+                <!-- Keep checkboxes aligned as before -->
                 <label>Ways to Access Music:</label><br>
-                <!-- Use a table for checkboxes to ensure proper alignment -->
                 <table align="center">
                     <tr>
                         <td><input type="checkbox" id="stream" name="access" value="stream"></td>
@@ -63,12 +83,20 @@
                 </table>
                 <br>
                 
-                <label for="comment">Comments:</label><br>
-                <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br><br>
-                
-                <img src="group-icon.jpg" alt="Group Icon" width="100" height="100"><br><br>
-                
-                <input type="submit" value="Submit">
+                <!-- Center Comments -->
+                <table align="center">
+                    <tr>
+                        <td><label for="comment">Comments:</label></td>
+                        <td><textarea id="comment" name="comment" rows="4" cols="30"></textarea></td>
+                    </tr>
+                </table>
+                <br>
+
+                <!-- Center Image and Submit Button -->
+                <center>
+                    <img src="group-icon.jpg" alt="Group Icon" width="100" height="100"><br><br>
+                    <input type="submit" value="Submit">
+                </center>
             </form>
         </td>
         <td width="50">&nbsp;</td>
