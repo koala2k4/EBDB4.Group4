@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biểu Mẫu Âm Nhạc</title>
+    <style>
+        body {
+            background-color: rgb(240, 240, 240);
+            font-family: Helvetica, sans-serif;
+        }
+        table {
+            width: 60%;
+            height: 400px;
+            margin: auto;
+            background-color: rgb(220, 220, 220);
+            border-collapse: collapse;
+        }
+        td {
+            vertical-align: middle;
+            text-align: center;
+        }
+        form {
+            background-color: rgb(245, 245, 245);
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 align="center">Biểu Mẫu Âm Nhạc Yêu Thích</h1>
+
+<table border="0">
+    <tr>
+        <td></td>
+        <td>
+            <form>
+                <label for="firstname">Họ:</label><br>
+                <input type="text" id="firstname" name="firstname"><br><br>
+                
+                <label for="lastname">Tên:</label><br>
+                <input type="text" id="lastname" name="lastname"><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="genre">Thể loại âm nhạc yêu thích:</label><br>
+                <select id="genre" name="genre">
+                    <option value="rock">Rock</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="hiphop">Hip-hop</option>
+                    <option value="folk">Dân ca</option>
+                    <option value="classical">Cổ điển</option>
+                </select><br><br>
+                
+                <label>Cách thức truy cập âm nhạc:</label><br>
+                <input type="checkbox" id="stream" name="access" value="stream"> Phát trực tuyến<br>
+                <input type="checkbox" id="radio" name="access" value="radio"> Radio<br>
+                <input type="checkbox" id="cd" name="access" value="cd"> Đĩa CD<br>
+                <input type="checkbox" id="tv" name="access" value="tv"> TV<br>
+                <input type="checkbox" id="vinyl" name="access" value="vinyl"> Đĩa vinyl<br><br>
+                
+                <label for="comment">Bình luận:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br><br>
+                
+                <img src="group-icon.jpg" alt="Group Icon" width="100" height="100"><br><br>
+                
+                <input type="submit" value="Gửi">
+            </form>
+        </td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>
