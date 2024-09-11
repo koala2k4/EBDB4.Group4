@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Biểu Mẫu Âm Nhạc</title>
+    <title>Music Form</title>
     <style>
         body {
-            background-color: rgb(192, 192, 192);
+            background-color: rgb(255, 182, 193); /* Light Pink Background */
             font-family: Helvetica, sans-serif;
+            color: green; /* Green Text */
         }
         table {
             width: 60%;
             height: 400px;
             margin: auto;
-            background-color: rgb(105, 105, 105);
+            background-color: rgb(255, 228, 225); /* Lighter Pink for Table */
             border-collapse: collapse;
         }
         td {
@@ -19,7 +20,7 @@
             text-align: center;
         }
         form {
-            background-color: rgb(139, 137, 137);
+            background-color: rgb(255, 240, 245); /* Even Lighter Pink for Form */
             padding: 20px;
             border-radius: 8px;
         }
@@ -27,47 +28,57 @@
 </head>
 <body>
 
-<h1 align="center">Biểu Mẫu Âm Nhạc Yêu Thích</h1>
+<h1 align="center">Favorite Music Form</h1>
 
 <table border="0">
     <tr>
-        <td></td>
+        <td>A1</td>
+        <td>A2</td>
+        <td>A3</td>
+    </tr>
+    <tr>
+        <td>B1</td>
         <td>
             <form>
-                <label for="firstname">Họ:</label><br>
+                <label for="firstname">First Name:</label><br>
                 <input type="text" id="firstname" name="firstname"><br><br>
                 
-                <label for="lastname">Tên:</label><br>
+                <label for="lastname">Last Name:</label><br>
                 <input type="text" id="lastname" name="lastname"><br><br>
                 
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email"><br><br>
                 
-                <label for="genre">Thể loại âm nhạc yêu thích:</label><br>
+                <label for="genre">Favorite Music Genre:</label><br>
                 <select id="genre" name="genre">
                     <option value="rock">Rock</option>
                     <option value="jazz">Jazz</option>
                     <option value="hiphop">Hip-hop</option>
-                    <option value="folk">Dân ca</option>
-                    <option value="classical">Cổ điển</option>
+                    <option value="folk">Folk</option>
+                    <option value="classical">Classical</option>
                 </select><br><br>
                 
-                <label>Cách thức truy cập âm nhạc:</label><br>
-                <input type="checkbox" id="stream" name="access" value="stream"> Phát trực tuyến<br>
+                <label>Ways to Access Music:</label><br>
+                <input type="checkbox" id="stream" name="access" value="stream"> Streaming<br>
                 <input type="checkbox" id="radio" name="access" value="radio"> Radio<br>
-                <input type="checkbox" id="cd" name="access" value="cd"> Đĩa CD<br>
+                <input type="checkbox" id="cd" name="access" value="cd"> CDs<br>
                 <input type="checkbox" id="tv" name="access" value="tv"> TV<br>
-                <input type="checkbox" id="vinyl" name="access" value="vinyl"> Đĩa vinyl<br><br>
+                <input type="checkbox" id="vinyl" name="access" value="vinyl"> Vinyl Records<br><br>
                 
-                <label for="comment">Bình luận:</label><br>
+                <label for="comment">Comments:</label><br>
                 <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br><br>
                 
                 <img src="group-icon.jpg" alt="Group Icon" width="100" height="100"><br><br>
                 
-                <input type="submit" value="Gửi">
+                <input type="submit" value="Submit">
             </form>
         </td>
-        <td></td>
+        <td>B3</td>
+    </tr>
+    <tr>
+        <td>C1</td>
+        <td>C2</td>
+        <td>C3</td>
     </tr>
 </table>
 
