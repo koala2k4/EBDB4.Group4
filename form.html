@@ -17,8 +17,6 @@
         td {
             vertical-align: middle;
             text-align: center;
-            min-width: 120px; /* Slightly increase the width of cells */
-            min-height: 50px; /* Slightly increase the height of cells */
         }
         form {
             background-color: rgb(255, 240, 245); /* Even Lighter Pink for Form */
@@ -28,6 +26,7 @@
         .checkbox-container {
             display: flex;
             align-items: center;
+            justify-content: flex-start; /* Align checkboxes with their labels */
             margin-bottom: 5px;
         }
         .checkbox-container input {
@@ -54,12 +53,12 @@
 
 <table border="0">
     <tr>
-        <td>A1</td>
-        <td>A2</td>
-        <td>A3</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>B1</td>
+        <td></td>
         <td>
             <form>
                 <label for="firstname">First Name:</label><br>
@@ -113,12 +112,12 @@
                 <input type="submit" value="Submit">
             </form>
         </td>
-        <td>B3</td>
+        <td></td>
     </tr>
     <tr>
-        <td>C1</td>
-        <td>C2</td>
-        <td>C3</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
