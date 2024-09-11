@@ -7,23 +7,32 @@
             background-color: rgb(255, 182, 193); /* Light Pink Background */
             font-family: Helvetica, sans-serif;
             color: green; /* Green Text */
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height for centering */
         }
         table {
             width: 60%;
-            height: 400px;
-            margin: auto;
             background-color: rgb(255, 228, 225); /* Lighter Pink for Table */
             border-collapse: collapse;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         td {
             vertical-align: middle;
             text-align: center;
+            padding: 10px; /* Padding around the cells for equal spacing */
         }
         form {
             background-color: rgb(255, 240, 245); /* Even Lighter Pink for Form */
             padding: 20px;
             border-radius: 8px;
+            text-align: left; /* Left align the text inside the form */
         }
+        
     </style>
 </head>
 <body>
@@ -32,12 +41,12 @@
 
 <table border="0">
     <tr>
-        <td>A1</td>
-        <td>A2</td>
-        <td>A3</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>B1</td>
+        <td></td>
         <td>
             <form>
                 <label for="firstname">First Name:</label><br>
@@ -59,11 +68,27 @@
                 </select><br><br>
                 
                 <label>Ways to Access Music:</label><br>
-                <input type="checkbox" id="stream" name="access" value="stream"> Streaming<br>
-                <input type="checkbox" id="radio" name="access" value="radio"> Radio<br>
-                <input type="checkbox" id="cd" name="access" value="cd"> CDs<br>
-                <input type="checkbox" id="tv" name="access" value="tv"> TV<br>
-                <input type="checkbox" id="vinyl" name="access" value="vinyl"> Vinyl Records<br><br>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="stream" name="access" value="stream">
+                    <label for="stream">Streaming</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="radio" name="access" value="radio">
+                    <label for="radio">Radio</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="cd" name="access" value="cd">
+                    <label for="cd">CDs</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="tv" name="access" value="tv">
+                    <label for="tv">TV</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="vinyl" name="access" value="vinyl">
+                    <label for="vinyl">Vinyl Records</label>
+                </div>
+                <br>
                 
                 <label for="comment">Comments:</label><br>
                 <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br><br>
@@ -73,12 +98,12 @@
                 <input type="submit" value="Submit">
             </form>
         </td>
-        <td>B3</td>
+        <td></td>
     </tr>
     <tr>
-        <td>C1</td>
-        <td>C2</td>
-        <td>C3</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
